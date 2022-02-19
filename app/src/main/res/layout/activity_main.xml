@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/orange1">
+
+        <TextView
+            android:id="@+id/greetings"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Application"
+            android:textSize="20dp"
+            android:typeface="monospace"
+            android:textColor="@color/black"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/greetings"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tanzaniaicon"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_back"
+            android:layout_toEndOf="@+id/greetings"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/root_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/emergency"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:background="@drawable/corner_white"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:elevation="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@drawable/wheel_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Referrals"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/report"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:background="@drawable/corner_white"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/emergency"
+            android:padding="10dp"
+            android:gravity="center"
+            android:elevation="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@drawable/report_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Reports"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Menu3"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:background="@drawable/corner_white"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/emergency"
+            android:padding="10dp"
+            android:gravity="center"
+            android:elevation="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@drawable/upload_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="upload"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:background="@drawable/corner_white"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/report"
+            android:layout_toEndOf="@+id/Menu3"
+            android:padding="10dp"
+            android:gravity="center"
+            android:elevation="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@android:drawable/ic_lock_power_off" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Logout"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/root_lyt"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="App Version 0.1"
+        android:textSize="15sp"
+        android:textColor="@color/grey"
+        android:gravity="center"
+        android:layout_marginTop="40dp" />
+
+
+</RelativeLayout>

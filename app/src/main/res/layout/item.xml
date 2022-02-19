@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:elevation="20dp"
+    android:background="@drawable/corner_white">
+
+    <TextView
+        android:id="@+id/lbl_regNo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="RegNo : "
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:id="@+id/value_regNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="300"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/lbl_regNo"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lbl_house_hold"
+        android:layout_width="150dp"
+        android:layout_below="@+id/lbl_regNo"
+        android:layout_height="wrap_content"
+        android:text="House hold : "
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:id="@+id/value_house_hold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Household 1 001"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/lbl_regNo"
+        android:layout_below="@+id/lbl_regNo"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lbl_respondent_name"
+        android:layout_width="150dp"
+        android:layout_below="@+id/lbl_house_hold"
+        android:layout_height="wrap_content"
+        android:text="Respondent name : "
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:id="@+id/value_respondent_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ally"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/lbl_respondent_name"
+        android:layout_below="@+id/value_house_hold"
+        android:textSize="15dp"/>
+
+
+
+    <TextView
+        android:id="@+id/lbl_village_name"
+        android:layout_width="150dp"
+        android:layout_below="@+id/lbl_respondent_name"
+        android:layout_height="wrap_content"
+        android:text="Hamlet : "
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:id="@+id/value_village_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Karukwanza"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/lbl_village_name"
+        android:layout_below="@+id/value_respondent_name"
+        android:textSize="15dp"/>
+    
+
+
+    <LinearLayout
+        android:id="@+id/status_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_below="@id/lbl_village_name">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_below="@+id/lbl_house_hold"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
